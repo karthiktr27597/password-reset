@@ -22,16 +22,20 @@ const SignUp = () => {
         e.preventDefault();
         console.log('singupdata', signUpData);
 
-        await axios
-            .post("https://password-reset-vbrg.onrender.com/user/signup", signUpData)
-            .then(response => {
-                console.log(response.data)
-                console.log('sign up successfully done')
-            })
-            .catch((err) => console.log(err.message));
+        if (name !== "" && email !== "") {
+            await axios
+                .post("https://password-reset-vbrg.onrender.com/user/signup", signUpData)
+                .then(response => {
+                    console.log(response.data)
+                    console.log('sign up successfully done')
+                })
+                .catch((err) => console.log(err.message));
 
-        alert("Sing Up done successfully")
-        navigate("/login");
+            alert("Sing Up done successfully")
+            navigate("/login");
+        } else {
+            alert("Error in Input");
+        }
     }
 
 

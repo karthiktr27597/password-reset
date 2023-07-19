@@ -40,7 +40,7 @@ const Login = () => {
         if (!loginError && !mailSucces & !error) {
             await axios.post('https://password-reset-vbrg.onrender.com/user/login', loginData)
                 .then(res => {
-                    console.log(res.data.data)
+                    console.log(res.data)
                     setToken(res.data.token)
                     return navigate("/login/success")
                 })
