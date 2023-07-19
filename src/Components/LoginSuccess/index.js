@@ -12,7 +12,7 @@ const LoginSuccess = (props) => {
     //const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZkNTkwMmNkNDkyNGExZTkzYWRjOSIsImlhdCI6MTY4OTI0NTEwNywiZXhwIjoxNjkxODM3MTA3fQ.y516XKFytFJP1AWWah4bfjn_aQ50EPN5Dqho9TJQ97w"
 
     const config = {
-        headers: { 'x-auth-token': `Bearer ${token}` }
+        headers: { 'x-auth-token': token }
     };
 
     // const headers = {
