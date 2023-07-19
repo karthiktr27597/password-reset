@@ -58,9 +58,14 @@ const SignUp = () => {
                     <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sing up
                 </Button>
+                <div className="login">
+                    <div onClick={() => navigate("/login")}>Go to Login page?</div>
+                </div>
             </Form>
+
+
 
         </div>
 

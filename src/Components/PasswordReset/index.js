@@ -60,7 +60,7 @@ function PasswordReset() {
                 form ?
                     <Form onSubmit={(e) => handlePwdReset(e)} className="form">
 
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Enter New Password</Form.Label>
                             <Form.Control type="password" placeholder="New password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
                         </Form.Group>

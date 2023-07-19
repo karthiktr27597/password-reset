@@ -60,7 +60,7 @@ const Login = () => {
         if (!mailSucces && !error) {
             await axios.post("https://password-reset-vbrg.onrender.com/user/forgotpassword", emailData)
                 .then((res) => {
-                    console.log(res.data.data);
+                    console.log(res.data);
                     setMailSucces(!mailSucces);
                 })
                 .catch((err) => {

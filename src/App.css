@@ -25,6 +25,13 @@
   opacity: 1
 }
 
+.login {
+  color: blueviolet;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.login,
 .forgetPassword:active {
   color: green;
 }
