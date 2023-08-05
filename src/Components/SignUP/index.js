@@ -68,9 +68,6 @@ const SignUp = () => {
                     <div onClick={() => navigate("/login")}>Go to Login page?</div>
                 </div>
             </Form>
-
-
-
         </div>
 
     )
